@@ -3,6 +3,8 @@ server:
   connector:
     type: h2
     port: 0
+    acceptorThreads: 1
+    selectorThreads: 1
     keyStorePassword: http2_server
     validateCerts: false
   applicationContextPath: /api

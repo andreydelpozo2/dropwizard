@@ -3,6 +3,8 @@ server:
   connector:
     type: h2c
     port: 0
+    acceptorThreads: 1
+    selectorThreads: 1
   applicationContextPath: /api
   adminContextPath: /admin
 logging:
