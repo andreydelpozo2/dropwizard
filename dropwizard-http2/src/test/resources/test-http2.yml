@@ -7,3 +7,5 @@ server:
     validateCerts: false
   applicationContextPath: /api
   adminContextPath: /admin
+logging:
+  level: DEBUG

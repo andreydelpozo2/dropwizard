@@ -1,5 +1,6 @@
 package io.dropwizard.http2;
 
+import ch.qos.logback.classic.Level;
 import com.google.common.base.Charsets;
 import io.dropwizard.logging.BootstrapLogging;
 import org.eclipse.jetty.client.HttpClient;
@@ -19,7 +20,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class AbstractHttp2Test {
 
     static {
-        BootstrapLogging.bootstrap();
+        BootstrapLogging.bootstrap(Level.DEBUG);
     }
 
     protected static void assertResponse(ContentResponse response) {
